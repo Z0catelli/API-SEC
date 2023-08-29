@@ -22,7 +22,7 @@ async function gerarToken() { //função de requisição POST para gerar o token
         
         const responseBody = await response.json();
         accessToken = responseBody.access_token;
-        console.log(accessToken);
+        console.log(accessToken); //printando token obtido no POST
     } catch (err) {
         console.error(err);
     }
@@ -47,12 +47,12 @@ async function getJSON() {
             }
         });
 
-        if (!response.ok){
+        if (!response.ok){ //lança um erro se a requisição "response" falhar
             throw new Error('Failed to fetch data');
         }
 
-        const responseBody = await response.json();
-        console.log(responseBody);
+        const responseBody = await response.json(); //obtendo dados JSON
+        console.log(responseBody); //lista os dados dentro do JSON
 
     } catch (err) {
         console.log(err);
