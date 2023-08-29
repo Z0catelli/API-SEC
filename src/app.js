@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
+app.use(express.json());
+
 const livros = [
   { id: 1, titulo: "livro a" },
   { id: 2, titulo: "livro b" },
