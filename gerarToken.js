@@ -1,4 +1,5 @@
-async function gerarToken() { //função de requisição POST para gerar o token
+//função de requisição POST para gerar o token
+async function gerarToken() { 
     try {
         const response = await fetch('https://ec2-18-224-170-21.us-east-2.compute.amazonaws.com:8443/auth/oauth/v2/token', {
             method: 'POST',
@@ -14,16 +15,19 @@ async function gerarToken() { //função de requisição POST para gerar o token
             })
         });
 
+        //tratando erros
         if (!response.ok) {
             throw new Error('Failed to fetch token');
         }
         
         const responseBody = await response.json();
-        console.log(accessToken); //printando token obtido no POST
-        return responseBody.access_token;
+        return responseBody.access_token; //retornando apenas a propriedade do token
+
+    //tratando erros    
     } catch (err) {
         console.error(err);
     }
 }
 
+//exportando a função
 export default gerarToken;
