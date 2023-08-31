@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap");
 
 * {
   margin: 0;
@@ -10,16 +9,19 @@
   vertical-align: baseline;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   display: flex;
 }
 
 .title {
-    font-family: Montserrat;
-    color: white;
-    font-size: 90px;
-    margin: 50px 0 150px 150px;
-    
+  font-family: Montserrat;
+  color: white;
+  font-size: 90px;
+  margin: 50px 0 150px 150px;
 }
 
 .search-section {
@@ -29,33 +31,38 @@ body {
 }
 
 .input-field {
-    position: relative;
-    margin: 0 0 0 50px;
+  position: relative;
+  margin: 0 0 0 50px;
 }
 
 .input-field input {
-    height: 60px;
-    width: 85%;
-    border-radius: 25px;
-    outline: solid 2px white;
-    background-color: #4d6a4a;
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.7);
+  height: 60px;
+  width: 85%;
+  border-radius: 25px;
+  outline: solid 2px white;
+  background-color: #4d6a4a;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .input-field input::placeholder {
-    color: #cdcfc0;
-    font-size: 20px;
+  color: #cdcfc0;
+  font-size: 20px;
 }
 
 .menu {
-    margin: 40px 0 40px 100px;
+  margin: 40px 0 40px 100px;
 }
 
 .comidas {
   display: flex;
   flex-direction: row;
-  margin: 25px
+  margin: 25px;
+}
+
+.comidas:hover {
+  transition: all 0.5ms ease;
+  scale: 1.05;
 }
 
 .comidas-img {
@@ -63,24 +70,26 @@ body {
 }
 
 .infos {
-    margin: 10px 30px;
+  margin: 10px 30px;
 }
 
-.nome, .tipo, .preco {
-    margin-bottom: 20px;
+.nome,
+.tipo,
+.preco {
+  margin-bottom: 20px;
 }
 
 .nome {
-    color: #423f32;
-    font-size: 50px
+  color: #423f32;
+  font-size: 50px;
 }
 
 .tipo {
-    color: #cdcfc0;
-    font-size: 30px;
+  color: #cdcfc0;
+  font-size: 30px;
 }
 
 .preco {
-    color:#423f32;
-    font-size: 25px;
+  color: #423f32;
+  font-size: 25px;
 }

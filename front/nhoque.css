@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+  display: flex;
+}
+
+.title {
+    font-family: Montserrat;
+    color: white;
+    font-size: 90px;
+    margin: 50px 0 150px 150px;
+    
+}
+
+.search-section {
+  background: #4d6a4a;
+  width: 40%;
+  height: 995px;
+}
+
+.input-field {
+    position: relative;
+    margin: 0 0 0 50px;
+}
+
+.input-field input {
+    height: 60px;
+    width: 85%;
+    border-radius: 25px;
+    outline: solid 2px white;
+    background-color: #4d6a4a;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-field input::placeholder {
+    color: #cdcfc0;
+    font-size: 20px;
+}
+
+.menu {
+    margin: 40px 0 40px 100px;
+}
+
+.comidas {
+  display: flex;
+  flex-direction: column;
+  margin: 25px
+}
+
+.comidas-img {
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+.infos {
+    margin: 10px 0px;
+}
+
+.nome, .tipo, .preco {
+    margin-bottom: 20px;
+}
+
+.nome {
+    color: #423f32;
+    font-size: 50px;
+}
+
+.tipo {
+    color: #cdcfc0;
+    font-size: 30px;
+}
+
+.preco {
+    color:#423f32;
+    font-size: 25px;
+}
