@@ -19,7 +19,6 @@
 <h2> 📁 Acesso ao Projeto </h2>
 <p> <a href="https://github.com/Z0catelli/API/blob/main/index.js">Acesse o código fonte do projeto</a> ou <a href="https://github.com/Z0catelli/API/archive/refs/heads/main.zip">baixe aqui</a>.</p>
 
-<h2>Preparando o ambiente</h2>
 <h3>Requisitos</h3>
 <div>
   <img alt="NodeJS version badge" src="https://img.shields.io/badge/NodeJS-v18.17.1-A1C935">
@@ -27,7 +26,7 @@
 </div>
 <br>
 
-<h3>Instalando NodeJS no Linux(Ubuntu)</h3>
+<h3>📥 Instalando NodeJS no Linux(Ubuntu)</h3>
 <p> Para saber como instalar o NodeJS em outros sistemas operacionais você pode <a href="">clicar aqui</a>. Para instalar a versão LTS no Linux Ubuntu, devemos digitar no terminal os seguintes comandos:</p>
 <div>
   <ol>
@@ -46,3 +45,9 @@
     <li> Para rodar o projeto, execute o comando <code>node index.js</code>. </li>
   </ol>  
 </div>
+
+<h2>🔧 Funcionalidades</h2>
+<p>Ao executar a aplicação será possivel inserir no terminal o nome de um objeto que está contido no JSON e consultar suas informações:</p>
+<img alt="" src="https://user-images.githubusercontent.com/101437257/265135709-0973d81c-a310-4648-9a32-f3d9b4e233af.gif">
+<p>Ao pressionar <code>Enter</code>, sem inserir nenhum dado, será retornado a lista de todos os objetos cadastrados e suas informações.</p>
+<img alt="" src="https://user-images.githubusercontent.com/101437257/265135719-dbc8758f-2adf-4538-8f75-2e0e0de24d40.gif">
