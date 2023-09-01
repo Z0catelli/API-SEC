@@ -1,18 +1,16 @@
 import readline from "readline-sync"; //importando pacote
+import credenciais from "./config.js";
 
 //função que realiza o get, se autenticando com o token gerado pelo getToken, e obtem um JSON
 async function getJSON(token) {
   try {
-    const response = await fetch(
-      "https://ec2-18-224-170-21.us-east-2.compute.amazonaws.com:8443/comidas",
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    );
+    const response = await fetch(credenciais.apiUrl, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
 
     //lança um erro se a requisição "response" falhar
     if (!response.ok) {
